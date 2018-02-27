@@ -2,9 +2,6 @@
 
 allNames=$( xclip -o )
 nameOfSchool='Gymnázium Plzeň, Mikulášské náměstí 23, Plzeň'
-echo "$nameOfSchool"
-echo
-echo
 
 i=15
 while read -r name; do
