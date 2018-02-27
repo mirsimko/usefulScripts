@@ -3,13 +3,13 @@
 allNames=$( xclip -o )
 nameOfSchool='Gymnázium Plzeň, Mikulášské náměstí 23, Plzeň'
 
-i=15
+counter=15
 while read -r name; do
   echo '<tr>'
-  echo '<td>'$i'.</td>'
+  echo '<td>'$counter'.</td>'
   echo '<td> '"$name"'</td>'
   echo '<td>'"$nameOfSchool"'</td>'
   echo '</tr>'
-  let i=i+1
-done <<< "$allNames"
+  let counter=counter+1
+done <<< "$allNames" # reads all names by lines not by words separated by empty character
   
