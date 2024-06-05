@@ -9,3 +9,4 @@ for %%i in (*) do (
         for /f "usebackq tokens=3" %%j in (`dir /s /-c "%%i" ^| find "File(s)"`) do echo %%j
     )
 )
+pause
